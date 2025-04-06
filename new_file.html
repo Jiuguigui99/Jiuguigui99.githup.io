@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祈福文化数字化体验调查问卷</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .options label {
+            display: block;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+        }
+        .result {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>幻香空愿AR交互用户个性化ID获取问卷</h1>
+        <form id="surveyForm">
+            <div class="question">
+                <label>您通常如何参与祈福活动？</label>
+                <div class="options">
+                    <label><input type="radio" name="participation" value="A"> A. 亲自到寺庙或祈福场所</label>
+                    <label><input type="radio" name="participation" value="B"> B. 通过朋友或家人代为祈福</label>
+                    <label><input type="radio" name="participation" value="C"> C. 在线参与数字化祈福</label>
+                    <label><input type="radio" name="participation" value="D"> D. 不参与</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您对祈福文化的了解程度如何？</label>
+                <div class="options">
+                    <label><input type="radio" name="culture_knowledge" value="A"> A. 非常了解</label>
+                    <label><input type="radio" name="culture_knowledge" value="B"> B. 了解一些</label>
+                    <label><input type="radio" name="culture_knowledge" value="C"> C. 知道一点</label>
+                    <label><input type="radio" name="culture_knowledge" value="D"> D. 不太了解</label>
+                    <label><input type="radio" name="culture_knowledge" value="E"> E. 完全不了解</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否参加过传统祈福活动？</label>
+                <div class="options">
+                    <label><input type="radio" name="traditional_participation" value="A"> A. 经常参加</label>
+                    <label><input type="radio" name="traditional_participation" value="B"> B. 偶尔参加</label>
+                    <label><input type="radio" name="traditional_participation" value="C"> C. 很少参加</label>
+                    <label><input type="radio" name="traditional_participation" value="D"> D. 从未参加</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否参与过数字化祈福体验？</label>
+                <div class="options">
+                    <label><input type="radio" name="digital_experience" value="A"> A. 经常参与</label>
+                    <label><input type="radio" name="digital_experience" value="B"> B. 偶尔参与</label>
+                    <label><input type="radio" name="digital_experience" value="C"> C. 很少参与</label>
+                    <label><input type="radio" name="digital_experience" value="D"> D. 从未参与</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您认为数字化祈福是否有助于文化传承？</label>
+                <div class="options">
+                    <label><input type="radio" name="cultural_heritage" value="A"> A. 非常有帮助</label>
+                    <label><input type="radio" name="cultural_heritage" value="B"> B. 有一定帮助</label>
+                    <label><input type="radio" name="cultural_heritage" value="C"> C. 一般</label>
+                    <label><input type="radio" name="cultural_heritage" value="D"> D. 帮助不大</label>
+                    <label><input type="radio" name="cultural_heritage" value="E"> E. 完全没有帮助</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否愿意参与更多关于祈福文化的数字化活动？</label>
+                <div class="options">
+                    <label><input type="radio" name="future_participation" value="A"> A. 非常愿意</label>
+                    <label><input type="radio" name="future_participation" value="B"> B. 愿意</label>
+                    <label><input type="radio" name="future_participation" value="C"> C. 一般</label>
+                    <label><input type="radio" name="future_participation" value="D"> D. 不太愿意</label>
+                    <label><input type="radio" name="future_participation" value="E"> E. 完全不愿意</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您认为数字化祈福是否能提供与传统祈福相同的体验？</label>
+                <div class="options">
+                    <label><input type="radio" name="experience_comparison" value="A"> A. 完全可以</label>
+                    <label><input type="radio" name="experience_comparison" value="B"> B. 大致可以</label>
+                    <label><input type="radio" name="experience_comparison" value="C"> C. 有一定差距</label>
+                    <label><input type="radio" name="experience_comparison" value="D"> D. 差距很大</label>
+                    <label><input type="radio" name="experience_comparison" value="E"> E. 完全不同</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否认为数字化祈福能更好地满足现代人的需求？</label>
+                <div class="options">
+                    <label><input type="radio" name="modern_demand" value="A"> A. 非常同意</label>
+                    <label><input type="radio" name="modern_demand" value="B"> B. 同意</label>
+                    <label><input type="radio" name="modern_demand" value="C"> C. 一般</label>
+                    <label><input type="radio" name="modern_demand" value="D"> D. 不同意</label>
+                    <label><input type="radio" name="modern_demand" value="E"> E. 完全不同意</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否愿意为更好的祈福体验支付额外费用？</label>
+                <div class="options">
+                    <label><input type="radio" name="premium_willingness" value="A"> A. 非常愿意</label>
+                    <label><input type="radio" name="premium_willingness" value="B"> B. 愿意，但需要看具体服务</label>
+                    <label><input type="radio" name="premium_willingness" value="C"> C. 不太愿意</label>
+                    <label><input type="radio" name="premium_willingness" value="D"> D. 完全不愿意</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您认为数字化祈福的费用应该是怎样的？</label>
+                <div class="options">
+                    <label><input type="radio" name="cost_expectation" value="A"> A. 完全免费</label>
+                    <label><input type="radio" name="cost_expectation" value="B"> B. 少量费用，可以接受</label>
+                    <label><input type="radio" name="cost_expectation" value="C"> C. 合理收费，根据服务内容定价</label>
+                    <label><input type="radio" name="cost_expectation" value="D"> D. 不清楚</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否愿意推荐数字化祈福给朋友或家人？</label>
+                <div class="options">
+                    <label><input type="radio" name="recommendation" value="A"> A. 非常愿意</label>
+                    <label><input type="radio" name="recommendation" value="B"> B. 愿意</label>
+                    <label><input type="radio" name="recommendation" value="C"> C. 一般</label>
+                    <label><input type="radio" name="recommendation" value="D"> D. 不太愿意</label>
+                    <label><input type="radio" name="recommendation" value="E"> E. 完全不愿意</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您对数字化祈福的仪式感持有什么印象？</label>
+                <div class="options">
+                    <label><input type="radio" name="interface_satisfaction" value="A"> A. 非常有仪式感</label>
+                    <label><input type="radio" name="interface_satisfaction" value="B"> B. 有仪式感</label>
+                    <label><input type="radio" name="interface_satisfaction" value="C"> C. 一般</label>
+                    <label><input type="radio" name="interface_satisfaction" value="D"> D. 没有仪式感</label>
+                    <label><input type="radio" name="interface_satisfaction" value="E"> E. 非常没有仪式感</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您认为数字化祈福是否应该增加更多互动环节？</label>
+                <div class="options">
+                    <label><input type="radio" name="interaction" value="A"> A. 非常需要</label>
+                    <label><input type="radio" name="interaction" value="B"> B. 需要</label>
+                    <label><input type="radio" name="interaction" value="C"> C. 一般</label>
+                    <label><input type="radio" name="interaction" value="D"> D. 不需要</label>
+                    <label><input type="radio" name="interaction" value="E"> E. 完全不需要</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否认为市面上的数字化祈福能够取代传统的线下祈福体验吗？</label>
+                <div class="options">
+                    <label><input type="radio" name="efficiency" value="A"> A. 非常同意</label>
+                    <label><input type="radio" name="efficiency" value="B"> B. 同意</label>
+                    <label><input type="radio" name="efficiency" value="C"> C. 一般</label>
+                    <label><input type="radio" name="efficiency" value="D"> D. 不同意</label>
+                    <label><input type="radio" name="efficiency" value="E"> E. 完全不同意</label>
+                </div>
+            </div>
+            <div class="question">
+                <label>您是否能愿意体验市面上越来越多的文化数字化体验？</label>
+                <div class="options">
+                    <label><input type="radio" name="user_testing" value="A"> A. 非常愿意</label>
+                    <label><input type="radio" name="user_testing" value="B"> B. 愿意</label>
+                    <label><input type="radio" name="user_testing" value="C"> C. 一般</label>
+                    <label><input type="radio" name="user_testing" value="D"> D. 不太愿意</label>
+                    <label><input type="radio" name="user_testing" value="E"> E. 完全不愿意</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">提交问卷</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // 获取用户选择
+            const participation = document.querySelector('input[name="participation"]:checked')?.value;
+            const cultureKnowledge = document.querySelector('input[name="culture_knowledge"]:checked')?.value;
+            const traditionalParticipation = document.querySelector('input[name="traditional_participation"]:checked')?.value;
+            const digitalExperience = document.querySelector('input[name="digital_experience"]:checked')?.value;
+            const culturalHeritage = document.querySelector('input[name="cultural_heritage"]:checked')?.value;
+            const futureParticipation = document.querySelector('input[name="future_participation"]:checked')?.value;
+            const experienceComparison = document.querySelector('input[name="experience_comparison"]:checked')?.value;
+            const modernDemand = document.querySelector('input[name="modern_demand"]:checked')?.value;
+            const premiumWillingness = document.querySelector('input[name="premium_willingness"]:checked')?.value;
+            const costExpectation = document.querySelector('input[name="cost_expectation"]:checked')?.value;
+            const recommendation = document.querySelector('input[name="recommendation"]:checked')?.value;
+            const interfaceSatisfaction = document.querySelector('input[name="interface_satisfaction"]:checked')?.value;
+            const interaction = document.querySelector('input[name="interaction"]:checked')?.value;
+            const efficiency = document.querySelector('input[name="efficiency"]:checked')?.value;
+            const userTesting = document.querySelector('input[name="user_testing"]:checked')?.value;
+            
+            // 检查是否所有问题都已回答
+            if (!participation || !cultureKnowledge || !traditionalParticipation || !digitalExperience || !culturalHeritage || !futureParticipation || !experienceComparison || !modernDemand || !premiumWillingness || !costExpectation || !recommendation || !interfaceSatisfaction || !interaction || !efficiency || !userTesting) {
+                alert('请完成所有问题，以便生成个性化的ID内容！');
+                return;
+            }
+            
+            // 定义算法歧视逻辑
+            let userType;
+            let userIdPrefix;
+            
+            // 基于用户特征进行歧视性分类
+            if (premiumWillingness === 'A' || premiumWillingness === 'B') {
+                // 愿意支付额外费用的用户
+                if (recommendation === 'A' || recommendation === 'B') {
+                    // 愿意推荐的用户
+                    userType = "尊贵体验用户";
+                    userIdPrefix = "ZG";
+                } else {
+                    userType = "普通体验用户";
+                    userIdPrefix = "PT";
+                }
+            } else {
+                // 不太愿意支付额外费用的用户
+                userType = "普通体验用户";
+                userIdPrefix = "PT";
+            }
+            
+            // 生成用户ID
+            const randomId = Math.floor(Math.random() * 900000) + 100000;
+            const userId = `${userIdPrefix}${randomId}`;
+            
+            // 显示结果
+            document.getElementById('result').innerHTML = `
+                <p>感谢您的参与！</p>
+                <p>您的用户类型是：${userType}</p>
+                <p>您的用户ID是：${userId}</p>
+            `;
+        });
+    </script>
+</body>
+</html>
